@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex">
+
+  <!-- OGP -->
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Planet Hunters'>
+  <meta property='og:url' content=''>
+  <!--
+  <meta property='og:description' content='奪われた故郷の星を取り戻せ、壮大なSFファンタジー。銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。'>
+  -->
+  <meta property="og:image" content="">
+  <!-- /OGP -->
+  <!--
+  <meta name="description" content="奪われた故郷の星を取り戻せ、壮大なSFファンタジー。銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。" />
+  -->
+  <meta name="description" content="無料コーディング練習所 ゲームサイト練習用">
+  <title>Planet Hunters</title>
+
+  <!-- WEBフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700&family=Noto+Sans+JP:wght@500;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- /WEBフォント -->
+  
+  <link href="css/destyle.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- ファビコン -->
+  <link rel="icon" type="image/png" href="assets/img/icon/icon-192x192.png">
+  <link rel="apple-touch-icon" type="image/png" href="assets/img/icon/apple-touch-icon-180x180.png">
+  <link rel="icon" href="assets/img/icon/favicon.ico">
+  <!-- /ファビコン -->
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v12.0"
+    nonce="lababbly"></script>
+
+  <div id="js-loading" class="loading">
+    <div class="loading-animation">
+      <div class="atom-spinner">
+        <div class="spinner-inner">
+          <div class="spinner-line"></div>
+          <div class="spinner-line"></div>
+          <div class="spinner-line"></div>
+          <!--Chrome renders little circles malformed :(-->
+          <div class="spinner-circle">
+            &#9679;
+          </div>
+        </div>
+      </div>
+      <p class="loading-text"><img src="assets/img/loading.svg" alt="Loading"></p>
+    </div>
+  </div>
+
+  <div class="bgParallax">
+    <video class="bgParallax-video" playsinline muted autoplay loop>
+      <source src="assets/video/bg_movie.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- header -->
+  <header id="header" class=" header"></header>
+  <!-- /header -->
+
+  <!-- mv -->
+  <section id="mv" class="mv"></section>
+  <!-- /mv -->
+
+  <main class="content">
+
+    <!-- story -->
+    <section id="story" class="story"></section>
+    <!-- story -->
+
+    <!-- cta -->
+    <div class="cta cta--01"></div>
+    <!-- /cta -->
+
+    <!-- tariler -->
+    <section id="trailer" class="trailer"></section>
+    <!-- /tariler -->
+
+    <!-- cta -->
+    <div class="cta cta--02"></div>
+    <!-- /cta -->
+
+  </main>
+
+  <!-- footer -->
+  <footer id="footer" class="footer"></footer>
+  <!-- /footer -->
+
+  <div class="spCTA">
+    <a href="#" class="btn">PLAY NOW</a>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    {
+      $(function () {
+        $("#header").load("component/header.html");
+        $("#mv").load("component/mv.html");
+        $("#story").load("component/story.html");
+        $(".cta--01").load("component/cta.html");
+        $("#trailer").load("component/trailer.html");
+        $(".cta--02").load("component/cta.html");
+        $("#footer").load("component/footer.html");
+
+      });
+    }
+  </script>
+  <script src="js/script.js"></script>
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
+  </script>
+</body>
+</html>
